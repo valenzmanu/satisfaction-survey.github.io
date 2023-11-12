@@ -1,0 +1,47 @@
+.survey-face {
+    font-size: 48px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.survey-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.survey-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.survey-face:hover {
+    transform: scale(1.3);
+}
+
+.sad {
+    color: red;
+}
+
+.neutral {
+    color: gray;
+}
+
+.happy {
+    color: green;
+}
+
+.ecstatic {
+    color: purple;
+}
+
+.thankyou-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

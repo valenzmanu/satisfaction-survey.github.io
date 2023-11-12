@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Satisfaction Survey</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://unpkg.com/htmx.org@latest"></script>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div id="survey">
+    <div class="survey-header-container">
+      <div class=class="survey-header">
+        <span style="font-size: 80px;">¿Qué tal estuvo su visita?</span>
+      </div>
+    </div>
+    <div class="survey-container">
+      <span class="survey-face sad" hx-post="/submit" hx-swap="outerHTML" style="font-size: 150px;">😢</span>
+      <span class="survey-face neutral" hx-post="/submit" hx-swap="outerHTML" style="font-size: 150px;">😐</span>
+      <span class="survey-face happy" hx-post="/submit" hx-swap="outerHTML" style="font-size: 150px;">😊</span>
+      <span class="survey-face ecstatic" hx-post="/submit" hx-swap="outerHTML" style="font-size: 150px;">🥳</span>
+    </div>
+  </div>
+  <div class="thankyou-container" id="thankyou">
+    <span style="font-size: 150px;">¡Gracias!</span>
+  </div>
+</body>
+
+</html>
